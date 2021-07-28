@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+
+    <div class="hero-main">
+        <div class="hero-main-text-container">
+            <div class="line-height-container">
+                <h1 class="hero-header">Spice up your morning's with a new recipies</h1>
+            </div>
+            <p class="p-text">On this website you can find all the breakfast recipies you want with detailed steps on how to make them.
+                With detailed images on how these are made.
+                So if  </p>
+
+            <div class="hero-button-row">
+                <button class="main">Recipies</button>
+                <button class="secondary">About Me</button>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="{%static 'FixedImages/home/hero.jpg'%}" alt="">
+        </div>
+    </div>
+
+
+    <section class="section1">
+        <div class="section1-image-container">
+            <img src="{%static 'FixedImages/home/cherry.jpg'%}" alt="" class="image">
+        </div>
+
+        <div class="section1-text-container">
+            <div class="line-height-container">
+                <p class="small-text">Breakfast</p>
+                <h2 class="section1-header">See our recipies</h2>
+            </div>
+
+            <p class="p-text">So here are all our recipies.
+                And all these recipies are handpicked by me, the best
+                chef in the world.
+                so if you need to spice up your morning's, check out
+                my recipies</p>
+            
+            <button class="main">Recipies</button>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="grid-1">
+            <div class="grid-content1 cont">
+                <img src="{%static 'FixedImages/home/croissant.jpg'%}" alt="" class="image">
+            </div>
+            <div class="grid-content2">
+                <div class="section2-text">
+                    <div class="small-text s">Buttery </div>
+                    <h3 class="section3-header">Croissants and breads</h3>
+                    <p class="p-text">buttery and a light crunch 
+                        the perfect croissant that every
+                        person wants</p>
+                    <p class="read-more">Read More</p>
+                </div>
+            </div>
+
+            <div class="grid-content3 cont">
+                <img src="{%static 'FixedImages/home/bread.jpg'%}" alt="" class="image">
+            </div>
+            <div class="grid-content4">
+                <div class="section2-text">
+                    <div class="small-text s">Fruit</div>
+                    <h3 class="section3-header">Bread and fruit</h3>
+                    <p class="p-text">Berries and bread
+                        are a goo and healthy meal
+                        to start with. </p>
+                    <p class="read-more">Read More</p>
+                </div>
+            </div>
+
+            <div class="grid-content5 cont">
+                <img src="{%static 'FixedImages/home/bacon&eggs.jpg'%}" alt="" class="image">
+            </div>
+            <div class="grid-content6">
+                <div class="section2-text">
+                    <div class="small-text s">Eggs</div>
+                    <h3 class="section3-header">Eggs and Bacon</h3>
+                    <p class="p-text">Who does not like a good
+                        Eggs and bacon. Morning bacon
+                        sounds good to me</p>
+                    <p class="read-more">Read More</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section3">
+        <div class="grid-2">
+            <div class="grid-image-containers"><img src="{%static 'FixedImages/home/pancake.jpg'%}" alt=""></div>
+            <div class="grid-image-containers"><img src="{%static 'FixedImages/home/oats.jpg'%}" alt=""></div>
+            <div class="grid-image-containers"><img src="{%static 'FixedImages/home/croissantcherry.jpg'%}" alt=""></div>
+            <div class="grid-image-containers"><img src="{%static 'FixedImages/home/drink.jpg'%}" alt=""></div>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="line-height-container">
+            <p class="small-text">Breakfast</p>
+            <h2 class="section1-header">Categories</h2>
+        </div>
+
+        <div class="section4-flex">
+            <div class="section4-image-container">
+            <div class="dark"> </div>  
+            <img src="{%static 'FixedImages/home/section4pancake.jpg'%}" alt="" class="image">
+                <p class="image-text">Food</p>
+            </div>
+            <div class="section4-image-container">
+            <div class="dark"> </div>  
+            <img src="{%static 'FixedImages/home/section4drink.jpg'%}" alt="" class="image">
+                <p class="image-text">Drink</p>
+            </div>
+            <div class="section4-image-container">
+            <div class="dark"> </div>  
+            <img src="{%static 'FixedImages/home/section4food.jpg'%}" alt="" class="image">
+                <p class="image-text">Eggs</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="section5-image-container">
+            <img src="{%static 'FixedImages/home/coffee.jpg'%}" alt="">
+        </div>
+
+        <div class="section5-text-container">
+            <div class="line-height-container">
+                <h2 class="section1-header">Contact Me </h2>
+            </div>
+
+            <div class="input-fields">
+                <div class="input">
+                    <label for="">Name</label>
+                    <input type="text" class="inputfield">
+                </div>
+
+                <div class="input">
+                    <label for="">Email</label>
+                    <input type="email" class="inputfield">
+                </div>
+
+                <div class="input">
+                    <label for="">Message</label>
+                    <textarea name="" id="" class="inputfield"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
