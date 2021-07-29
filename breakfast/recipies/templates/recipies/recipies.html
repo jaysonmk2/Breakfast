@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+    
+    <div class="recipie-hero">
+        <div class="recipie-hero-imagecontainer">
+            <img src="{% static 'FixedImages/recipies/hero.jpg'%}" alt="">
+        </div>
+        <div class="recipie-hero-textcontainer">
+            <div class="center">
+                <div class="small-text">Breakfast</div>
+                <div class="line-height-container">
+                    <h1 class="recipie-title">Recipie List</h1>
+                </div>
+                <p class="p-text">If you scroll down you will see all the recipies we have in our database.
+                    and I assure you these are delicious</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="recipie-section">
+        <div class="line-height-container scon">
+            <p class="small-text">Breakfast</p>
+            <h2 class="section-title">Recipies</h2>
+        </div>
+
+
+        <div class="image-row">
+            <div class="recipie-image">
+                <img src="{% static 'FixedImages/recipies/Drink.jpg'%}" alt="" class="image re">
+                    <p class="image-text-recipe">Drinks</p>
+                </img>
+            </div>
+
+            <div class="recipie-image re1">
+                <img src="{% static 'FixedImages/recipies/Fruit.jpg'%}" alt="" class="image re">
+                    <p class="image-text-recipe">Fruits</p>
+                </img>
+            </div>
+            
+            <div class="recipie-image">
+                <img src="{% static 'FixedImages/recipies/Eggs.jpg'%}" alt="" class="image re">
+                    <p class="image-text-recipe">Food</p>
+                </img>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="recipieslist">
+        <div class="recipies-grid">
+           {% for recipe in recipie %}
+                <div class="recipie-container">
+                    <div class="recipie-image-container">
+                        <img src="{{recipe.main_image.url}}" alt="home" class="image">
+                    </div>
+
+                    <div class="recipie-text-container">
+                        <div class="line-height-container fixed">
+                            <p class="small-text">{{recipe.categorie}}</p>
+                            <h3 class="recipie-container-title">{{recipe.name}}</h3>
+                        </div>
+                        <p class="p-text recipie-p-text">{{recipe.description}}</p>
+                    </div>
+                </div>
+           {% endfor %}
+        </div>
+    </section>
+    
+{% endblock %}
+

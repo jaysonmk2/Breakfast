@@ -22,7 +22,7 @@
 .line-height-container::before{
     content: '';
     display: block;
-    width: 10px;
+    width: 5px;
     height: 100%;
     background: var(--main-color);
     position: absolute;
