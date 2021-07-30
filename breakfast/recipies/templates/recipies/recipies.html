@@ -8,6 +8,14 @@
     
     <div class="recipie-hero">
         <div class="recipie-hero-imagecontainer">
+        <div class="block11 bl1"></div>
+        <div class="block22 bl1"></div>
+        <div class="block33 bl1 "></div>
+        <div class="block44 bl1"></div>
+        <div class="block55 bl1 "></div>
+        <div class="block66 bl1"></div>
+        <div class="block77 bl1"></div>
+        <div class="block88 bl1"></div>
             <img src="{% static 'FixedImages/recipies/hero.jpg'%}" alt="">
         </div>
         <div class="recipie-hero-textcontainer">
@@ -31,34 +39,43 @@
 
         <div class="image-row">
             <div class="recipie-image">
-                <img src="{% static 'FixedImages/recipies/Drink.jpg'%}" alt="" class="image re">
-                    <p class="image-text-recipe">Drinks</p>
-                </img>
+                <a href="{%url 'breakfast:drink_filter'%}">
+                    <img src="{% static 'FixedImages/recipies/Drink.jpg'%}" alt="" class="image re">
+                        <p class="image-text-recipe">Drinks</p>
+                    </img>
+                </a>
             </div>
 
             <div class="recipie-image re1">
-                <img src="{% static 'FixedImages/recipies/Fruit.jpg'%}" alt="" class="image re">
-                    <p class="image-text-recipe">Fruits</p>
-                </img>
+                <a href="{%url 'breakfast:food_filter'%}">
+                    <img src="{% static 'FixedImages/recipies/Fruit.jpg'%}" alt="" class="image re">
+                        <p class="image-text-recipe">Food</p>
+                    </img>
+                </a>
             </div>
             
             <div class="recipie-image">
-                <img src="{% static 'FixedImages/recipies/Eggs.jpg'%}" alt="" class="image re">
-                    <p class="image-text-recipe">Food</p>
-                </img>
+                <a href="{%url 'breakfast:eggs_filter'%}">
+                    <img src="{% static 'FixedImages/recipies/Eggs.jpg'%}" alt="" class="image re">
+                        <p class="image-text-recipe">Eggs</p>
+                    </img>
+                </a>
             </div>
         </div>
     </section>
 
-
+ 
     <section class="recipieslist">
         <div class="recipies-grid">
            {% for recipe in recipie %}
                 
                     <div class="recipie-container">
                         <div class="recipie-image-container">
+                            <div class="block bl"></div>
+                            <div class="block1 bl"></div>
+                            <div class="block2 bl"></div>
                             <a href="{%url 'breakfast:detail' recipe.id%}" class="link">
-                            <img src="{{recipe.main_image.url}}" alt="home" class="image">
+                            <img src="{{recipe.main_image.url}}" alt="home" class="image hov">
                         </a>
                         </div>
                         <div class="recipie-text-container">

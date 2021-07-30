@@ -23,6 +23,14 @@
         </div>
 
         <div class="image-container">
+
+        <div class="block3 bl1"></div>
+        <div class="block4 bl1"></div>
+        <div class="block5 bl1 "></div>
+        <div class="block6 bl1"></div>
+        <div class="block7 bl1 "></div>
+        <div class="block8 bl1"></div>
+        <div class="block9 bl1"></div>
             <img src="{%static 'FixedImages/home/hero.jpg'%}" alt="" class="image">
         </div>
     </div>
@@ -123,19 +131,26 @@
 
         <div class="section4-flex">
             <div class="section4-image-container">
-            <div class="dark"> </div>  
-            <img src="{%static 'FixedImages/home/section4pancake.jpg'%}" alt="" class="image">
-                <p class="image-text">Food</p>
+                <a href="{%url 'breakfast:food_filter'%}">
+                    <div class="dark"> </div>
+                    <img src="{%static 'FixedImages/home/section4pancake.jpg'%}" alt="" class="image">
+                        <p class="image-text">Food</p>
+                </a>
             </div>
+            
             <div class="section4-image-container middle">
-            <div class="dark"> </div>  
-            <img src="{%static 'FixedImages/home/section4drink.jpg'%}" alt="" class="image">
-                <p class="image-text">Drink</p>
+            <a href="{%url 'breakfast:drink_filter'%}">
+                <div class="dark"> </div>
+                <img src="{%static 'FixedImages/home/section4drink.jpg'%}" alt="" class="image">
+                    <p class="image-text">Drink</p>
+            </a>
             </div>
             <div class="section4-image-container">
-            <div class="dark"> </div>  
-            <img src="{%static 'FixedImages/home/section4food.jpg'%}" alt="" class="image">
-                <p class="image-text">Eggs</p>
+            <a href="{%url 'breakfast:eggs_filter'%}">
+                <div class="dark"> </div>
+                <img src="{%static 'FixedImages/home/section4food.jpg'%}" alt="" class="image">
+                    <p class="image-text">Eggs</p>
+            </a>
             </div>
         </div>
     </section>

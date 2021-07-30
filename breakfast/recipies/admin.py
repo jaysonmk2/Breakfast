@@ -6,7 +6,7 @@ from . import models
 
 
 class RecipiesCategorieAdmin(admin.ModelAdmin):
-    list_display=('recipiecategorie',)
+    list_display=('recipiecategorie','id')
 
 
 class RecipiesAdmin(admin.ModelAdmin):

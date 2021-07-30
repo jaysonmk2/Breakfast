@@ -192,6 +192,8 @@ button{
         height: 60vh;
     }
 
+   
+
 }
 
 
@@ -227,6 +229,7 @@ button{
     }
     .image-container{
         width: 55%;
+        position: relative;
     }
     .hero-button-row{
         justify-content: start;
@@ -358,6 +361,42 @@ button{
     .contact{
         margin-bottom: 5rem
     }
+
+    .bl1{
+        position:absolute;
+        height: 90px;
+        width: 90px;
+        background-color: white;
+    }
+    .block3{
+        top:0;
+        left: 180px;
+    }
+    .block4{
+        left: 0;
+        top: 180px;
+    }
+    .block5{
+        top:90px;
+        left: 90px;
+    }
+    .block6{
+        bottom: 0;
+        right:0;
+    }
+    .block7{
+        bottom: 90px;
+        right: 90px;
+    }
+    .block8{
+        bottom:0;
+        left: 0;
+    }
+    .block7{
+        top:0;
+        left: 0;
+    }
+
 
 }
 

@@ -167,6 +167,48 @@ img{
 
 
 @media( min-width: 740px){
+    .image-container{
+        position:relative;
+    }
+
+    .bl1{
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        background-color: white;
+    }
+    .block11{
+        top:0;
+        left: 0;
+    }
+    .block22{
+        top: 90px;
+        left: 90px;
+    }
+    .block33{
+        right: 0;
+        top:0;
+    }
+    .block44{
+        right: 0;
+        top: 180px;
+    }
+    .block55{
+        right: 90px;
+        top:90px
+    }
+    .block66{
+        bottom: 0;
+        right: 0;
+    }
+    .block77{
+        bottom: 0;
+        right: 180px;
+    }
+    .block88{
+        bottom: 90px;
+        right: 90px;
+    }
     .flex{
         flex-direction: row;
         
