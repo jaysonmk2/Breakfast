@@ -7,7 +7,18 @@
     --hover-color: #ffc3c5;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
+.X{
+    font-weight: 900;
+    position: absolute;
+    top:25px;
+    left: 30px;
+    font-size: 3rem;
+}
 .image-container{
     height: 40vh;
 }
@@ -167,6 +178,10 @@ img{
 
 
 @media( min-width: 740px){
+    
+    
+    
+    
     .image-container{
         position:relative;
     }
