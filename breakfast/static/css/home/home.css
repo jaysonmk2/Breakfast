@@ -360,3 +360,43 @@ button{
     }
 
 }
+
+.decor3{
+    position:absolute;
+    top:1%;
+    left:-230px;
+    opacity: 0.3;
+    z-index: -3;
+   height: 500px;
+   width: 400px;
+    
+}
+.decor4{
+    position:absolute;
+    top:18%;
+    right:-440px;
+    opacity: 0.3;
+    z-index: -3;
+    height: 800px;
+    width: 700px;
+}
+
+.decor5{
+    position:absolute;
+    top:65%;
+    left:-440px;
+    opacity: 0.3;
+    z-index: -3;
+    height: 800px;
+    width: 700px;
+}
+.decor6{
+    position:absolute;
+    top:85%;
+    right:-440px;
+    opacity: 0.3;
+    z-index: -3;
+    height: 800px;
+    width: 700px;
+}
+

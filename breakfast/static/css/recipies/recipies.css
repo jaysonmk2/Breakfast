@@ -1,3 +1,9 @@
+
+.decor1,.decor2{
+    display:none;
+}
+
+
 .recipie-hero-textcontainer{
     padding: 2rem;
 }
@@ -151,7 +157,6 @@
     }
     .recipie-container{
         display:flex;
-        cursor: pointer;
     }
     .recipie-container > *{
         flex-basis: 100%;
@@ -159,6 +164,7 @@
     .recipie-image-container{
         height: 100%;
         width: 100%;
+        cursor: pointer;
     }
     .recipie-p-text{
         font-size: 0.9rem
@@ -166,4 +172,30 @@
     .recipie-container:hover{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.123), 0 6px 20px 0 rgba(0, 0, 0, 0.103);
     }
+    .decor1{
+        display: block;
+        position:absolute;
+        top:40%;
+        left:30%;
+        opacity: 0.3;
+        z-index: -3;
+        height: 800px;
+        width: 700px;
+        
+    }
+    .decor2{
+        display: block;
+        position:absolute;
+        top:30%;
+        right:-400px;
+        opacity: 0.3;
+        z-index: -3;
+        height: 800px;
+        width: 700px;
+    }
 }
+
+
+
+
+

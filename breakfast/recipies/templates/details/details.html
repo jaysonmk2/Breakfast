@@ -1,0 +1,99 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="{%static 'css/details/details.css'%}">
+</head>
+<body>
+
+    <img src="{%static 'FixedImages/decoration/big.png'%}" alt="" class="decor1">
+    <img src="{%static 'FixedImages/decoration/small.png'%}" alt="" class="decor2">
+    <div class="hero-container">
+        <div class="container">
+            <div class="hero-text">
+                <div class="center">
+                    <div class="space">
+                        <div class="line-height-container">
+                            <p class="small-text">{{detail.categorie}}</p>
+                            <h1 class="hero-title">{{detail.name}}</h1>
+                        </div>
+                    </div>
+                    <p class="p-text">{{detail.description}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="{{detail.main_image.url}}" alt="" class="image">
+        </div>
+    </div>
+
+
+    <section class="section1">
+        <div class="background-lint"></div>
+        <div class="image-section">
+            <img src="{{detail.image_first.url}}" alt="" class="image ins">
+                <div class="img-text-container">
+                    <div class="line-height-container">
+                        <p class="small-text">{{detail.one_word}}</p>
+                        <h2 class="ingredients-text1">Ingredients</h2>
+                    </div>
+                </div>
+            </img>
+        </div>
+
+    </section>
+
+    <div class="image-section-container">
+        <img src="{{detail.image_second.url}}" alt="" class="image">
+    </div>
+    
+    <div class="flex">
+        <div class="ingredients-list">
+            <h2 class="ingredients-title">Ingredients</h2>
+            <p class="ingredients-text">{{detail.ingredients}}</p>
+            <p class="watch-video">Watch Instruction Video</p>
+        </div>
+        <div class="nutrition-list">
+            <h2 class="ingredients-title">Nutrion Facts</h2>
+            <div class="nutrion-list">
+                <p class="ingredients-text">Serving: {{detail.serving_size}}</p>
+                <p class="ingredients-text">Calories: {{detail.calories}} kcal</p>
+                <p class="ingredients-text">Carbohydrates: {{detail.carbohydrates}}g</p>
+                <p class="ingredients-text">Protein: {{detail.protein}}g</p>
+                <p class="ingredients-text">Fat: {{detail.fat}}g</p>
+                <p class="ingredients-text">Potassium: {{detail.potassium}}mg</p>
+                <p class="ingredients-text">Vitamin A: {{detail.vitaminA}}IU</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="bottom-image-container">
+            <img src="{{detail.image_third.url}}" alt="" class="image bottom">
+                <div class="image-text">
+                    
+                        
+                        <div class="text">
+                            <div class="flex1">
+                                <div class="line"></div>
+                                <h3 class="enjoy">Enjoy</h3>
+                            </div>
+                            <p class="p-text">And we hope to see you again have a wonderful morning</p>
+                        </div>
+                    
+                </div>
+            </img>
+        </div>
+    </div>
+</body>
+</html>

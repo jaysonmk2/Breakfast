@@ -2,6 +2,9 @@
 {%load static%}
 
 {% block content %}
+
+    <img src="{%static 'FixedImages/decoration/big.png'%}" alt="" class="decor2">
+    <img src="{%static 'FixedImages/decoration/small.png'%}" alt="" class="decor1">
     
     <div class="recipie-hero">
         <div class="recipie-hero-imagecontainer">
@@ -51,19 +54,22 @@
     <section class="recipieslist">
         <div class="recipies-grid">
            {% for recipe in recipie %}
-                <div class="recipie-container">
-                    <div class="recipie-image-container">
-                        <img src="{{recipe.main_image.url}}" alt="home" class="image">
-                    </div>
-
-                    <div class="recipie-text-container">
-                        <div class="line-height-container fixed">
-                            <p class="small-text">{{recipe.categorie}}</p>
-                            <h3 class="recipie-container-title">{{recipe.name}}</h3>
+                
+                    <div class="recipie-container">
+                        <div class="recipie-image-container">
+                            <a href="{%url 'breakfast:detail' recipe.id%}" class="link">
+                            <img src="{{recipe.main_image.url}}" alt="home" class="image">
+                        </a>
                         </div>
-                        <p class="p-text recipie-p-text">{{recipe.description}}</p>
+                        <div class="recipie-text-container">
+                            <div class="line-height-container fixed">
+                                <p class="small-text">{{recipe.categorie}}</p>
+                                <h3 class="recipie-container-title">{{recipe.name}}</h3>
+                            </div>
+                            <p class="p-text recipie-p-text">{{recipe.description}}</p>
+                        </div>
                     </div>
-                </div>
+               
            {% endfor %}
         </div>
     </section>

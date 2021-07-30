@@ -1,0 +1,385 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #EC4449;
+    --hover-color: #ffc3c5;
+}
+
+
+.image-container{
+    height: 40vh;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position:relative;
+}
+h1,h2,h3,h4,h5,h6,a,p{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.line-height-container{
+    position: relative;
+    padding-left: 1.5rem;
+    
+    
+}
+.line-height-container::before{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    background: var(--main-color);
+    position: absolute;
+    left:0;
+    top: 0;
+}
+
+.space{
+    margin-bottom: 3rem;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.hero-container{
+    padding: 2rem 0;
+}
+
+.small-text{
+    font-size: 0.8rem;
+    letter-spacing: 0.8rem;
+    font-weight: 300;
+}
+
+
+.hero-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.p-text{
+    line-height: 1.645rem;
+    font-size: 1.2rem
+}
+.hero-text{
+    margin-bottom: 2rem;
+}
+
+
+.section1{
+    margin: 5rem 0;
+}
+.image-section{
+    position: relative;
+}
+
+.ins{
+    position:relative;
+    margin-left: 5rem;
+}
+.img-text-container{
+    position: absolute;
+    bottom: -60px;
+    left: 20px;
+    padding: 1rem 3rem;
+    background-color: white;
+    
+}
+.ingredients-text1{
+    font-size:3rem;
+    font-weight: 900;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.ingredients-list, .nutrition-list{
+    padding: 2rem;
+    text-align: center;
+}
+
+.nutrition-list{
+    background-color: var(--hover-color)
+}
+
+.watch-video{
+    margin-top: 3rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.bottom-image-container{
+    position: relative;
+}
+.image-text{
+    position: absolute;
+    bottom:-30px;
+    left:0;
+    background-color: white;
+    padding: 1rem;
+    width: 80%;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+
+.line{
+    width: 50px;
+    height:4px;
+    background: var(--main-color);
+}
+
+.enjoy{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+
+
+@media( min-width: 740px){
+    .flex{
+        flex-direction: row;
+        
+    }
+
+    .flex > *{
+        flex-basis: 100%;
+    }
+   
+
+    .image-section{
+        height: 40vh;
+    }
+
+    .image-text{
+        left: -100px;
+    }
+    .bottom-image-container{
+        width: 80%;
+        position: absolute;
+        right: 0%;
+    }
+
+    .enjoy{
+        font-size: 3rem;
+        margin-bottom: 1.2rem;
+    }
+    .image-section-container{
+        height: 30vh;
+    }
+    .ingredients-list, .nutrition-list{
+        padding-bottom: 4rem;
+        text-align: left;
+        padding-left:5rem;
+    }
+    .ingredients-title{
+        color: var(--main-color)
+    }
+    .ingredients-text{
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .section1{
+        position: relative;
+        margin-bottom: 10rem;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+    .image-container{
+        height: 100vh;
+        width: 55%;
+    }
+    .img-text-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .image-section-container{
+        height: 50vh;
+    }
+
+    .ingredients-text1{
+        font-size: 4rem;;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        width: 45%;
+    }
+
+    .hero-text{
+        margin: 0 3rem;
+    }
+    .hero-title{
+        font-size: 4rem;
+    }
+
+    .line-height-container::before{
+        width: 10px;
+    }
+
+    .image-section{
+        height: 70vh;
+        
+    }
+
+   
+
+    .ins{
+        width: 60%;
+        margin-left: 20rem;
+    }
+   
+    .img-text-container{
+        padding: 2rem 5rem;
+    }
+
+    .background-lint{
+        position: absolute;
+        width: 100%;
+        height: 40vh;
+        background-color: var(--main-color);
+        bottom: -10%;
+    }
+
+    .ingredients-title{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    .ingredients-text{
+        font-size: 1.6rem;
+        line-height: 1.6345;
+        font-weight: 500;
+    }
+    .ingredients-list, .nutrition-list{
+        padding-bottom: 7rem;
+    }
+    .bottom-image-container{
+        height: 80vh;
+    }
+
+    .image-text{
+        width: 50%;
+        bottom:0;
+        padding: 3rem 4rem;
+    }
+    .enjoy{
+        font-size: 4rem;
+        font-weight: 900;
+    }
+    .p-text{
+        font-size: 1.5rem
+    }
+}
+
+@media (min-width: 1400px){
+    .hero-title{
+        font-size: 6rem;
+    }
+    .p-text{
+        width: 80%;
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .img-text-container{
+        padding: 3rem 5rem;
+        bottom: -100px;
+        left: 200px
+    }
+    .ingredients-text1{
+        font-size: 6rem;
+        font-weight: 900;
+    }
+    .hero-text{
+        padding: 0 5rem;
+    }
+    .ins{
+        margin-left: 30rem;
+
+    }
+    .ingredients-list, .nutrition-list{
+        padding: 7rem;
+    }
+    .ingredients-title{
+        font-size: 4rem;
+    }
+    .watch-video{
+        font-size: 1.5rem;
+        margin-top: 10rem
+    }
+
+    .line{
+        width: 100px;
+        height: 10px
+    }
+
+    .bottom-image-container{
+        width: 90%;
+       
+    }
+
+    .image-text{
+        width: 40%;
+    }
+}
+
+.decor1{
+    position:absolute;
+    top:25%;
+    left:-200px;
+    opacity: 0.3;
+    z-index: -3;
+   height: 500px;
+   width: 400px;
+    
+}
+.decor2{
+    position:absolute;
+    top:32%;
+    right:-300px;
+    opacity: 0.3;
+    z-index: -3;
+    height: 800px;
+    width: 700px;
+}
